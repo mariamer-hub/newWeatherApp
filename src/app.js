@@ -117,15 +117,14 @@ const errorCallback = (error) => {
 };
 
 function searchLocation(position) {
-  let apiKey = "at731cf267b4abccf566243f6ceo3306";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(displayForecast);
+  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${position.coords.longitude}&lat=${position.coords.latitude}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function getCurrentLocation(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(displayTemperature);
+  navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
 let form = document.querySelector("#search-form");
