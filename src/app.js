@@ -67,7 +67,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "at731cf267b4abccf566243f6ceo3306";
+  let apiKey = "c03face7caa58a9b7ffa9f52b7238a93";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -96,7 +96,7 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "at731cf267b4abccf566243f6ceo3306";
+  let apiKey = "c03face7caa58a9b7ffa9f52b7238a93";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayTemperature);
@@ -117,7 +117,7 @@ const errorCallback = (error) => {
 };
 
 function searchLocation(position) {
-  let apiKey = "at731cf267b4abccf566243f6ceo3306";
+  let apiKey = "c03face7caa58a9b7ffa9f52b7238a93";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayForecast);
