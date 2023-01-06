@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  background-image: url("../images/background2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-app {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background: rgba(100, 100, 100, 0.6);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: larger;
+}
+
+.submit-button {
+  margin: 10px;
+  border: none;
+  border-radius: 50%;
+  padding: 6px 11px;
+  background: rgba(100, 100, 100, 0.6);
+  color: rgb(159, 159, 159);
+  font-size: larger;
+}
+.location {
+  width: 20px;
+}
+
+.submit-button:hover {
+  background: rgba(162, 162, 164, 0.6);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.data-list {
+  margin: 0;
+  padding: 0;
+}
+
+.data-list-item {
+  list-style: none;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.data-list-item::first-letter {
+  text-transform: capitalize;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.main-icon {
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+  right: -20px;
+  margin: 0;
+}
+
+.temperature {
+  position: relative;
+  top: 20px;
+  font-size: 90px;
+}
+
+.units {
+  position: relative;
+  top: 50px;
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.info {
+  text-align: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+  color: rgb(164, 163, 163);
+}
+
+.info a {
+  color: rgb(143, 126, 172);
+  text-decoration: none;
+}
+
+.name:hover {
+  color: olivedrab;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+.source:hover {
+  color: olivedrab;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+
+.weather-forecast {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  font-family: inherit;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temp {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.forecast-temp-min {
+  opacity: 0.6;
+}
