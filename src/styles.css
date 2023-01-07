@@ -84,7 +84,7 @@ body {
 .main-icon {
   vertical-align: middle;
   position: relative;
-  top: 10px;
+  top: 25px;
   right: -20px;
   margin: 0;
 }
@@ -92,7 +92,7 @@ body {
 .temperature {
   position: relative;
   top: 20px;
-  font-size: 90px;
+  font-size: 80px;
 }
 
 .units {
